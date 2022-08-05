@@ -1,0 +1,32 @@
+
+genero basico :
+
+{
+ "nombre" : "comedia"
+}
+
+personaje basico :
+
+{
+  "nombre": "shrek",
+  "edad": 30,
+  "peso": 250.2,
+  "historia": "shrek vive gozando en un pantano"
+}
+
+pelicula basica :
+
+{
+  "titulo": "shrek 1",
+  "fecha_creacion": "2006-05-02",
+  "calificacion": 4
+}
+
+usuario USER basico :
+{
+  "name": "newbie the user",
+  "username": "user7",
+  "paswword": "1234,
+  "email": "user@user.com"
+}
+
