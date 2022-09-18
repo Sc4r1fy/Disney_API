@@ -1,7 +1,6 @@
 package com.alkemyProject.disneyAPI_v1.controladores;
 
 import com.alkemyProject.disneyAPI_v1.entidades.Personaje;
-import com.alkemyProject.disneyAPI_v1.servicio.PeliculaServicio;
 import com.alkemyProject.disneyAPI_v1.servicio.PersonajeServicio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -53,7 +52,7 @@ public class PersonajeControlador {
     }
 // ---------------------------------------------------------------------------------------------------
 
-    // chequeado i believe
+    // chequeado
     @PostMapping
     public ResponseEntity<?> guardarPersonaje(@RequestPart(name = "personaje") @Valid Personaje personaje , @RequestPart(name = "file") MultipartFile imagen){
 
@@ -129,7 +128,7 @@ public class PersonajeControlador {
 
 
 
-        // chequeado y testeado a medias
+        // chequeado
         @PutMapping("/{personajeId}")
         public ResponseEntity<?> modificarPersonaje(@PathVariable Integer personajeId , @RequestPart @Valid Personaje personaje ,
                                                     @RequestPart( required = false , name = "file") MultipartFile imagen){

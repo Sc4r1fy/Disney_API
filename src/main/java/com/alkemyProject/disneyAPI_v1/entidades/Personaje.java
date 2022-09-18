@@ -1,6 +1,6 @@
 package com.alkemyProject.disneyAPI_v1.entidades;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import org.hibernate.validator.constraints.Range;
