@@ -23,8 +23,8 @@ public class DisneyApiV1Application {
 	PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
-
 /*
+
 	@Bean
 	CommandLineRunner commandLineRunner(UsuarioServicio userService) {
 		return args -> {
