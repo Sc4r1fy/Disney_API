@@ -1,10 +1,8 @@
 package com.alkemyProject.disneyAPI_v1.controladores;
 
-import com.alkemyProject.disneyAPI_v1.Excepciones.ResourceNotFoundException;
+
 import com.alkemyProject.disneyAPI_v1.entidades.Pelicula;
-import com.alkemyProject.disneyAPI_v1.entidades.Personaje;
 import com.alkemyProject.disneyAPI_v1.servicio.PeliculaServicio;
-import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

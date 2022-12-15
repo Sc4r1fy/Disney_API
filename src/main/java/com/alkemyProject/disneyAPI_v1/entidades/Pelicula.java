@@ -2,8 +2,7 @@ package com.alkemyProject.disneyAPI_v1.entidades;
 
 
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonFormat;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import org.hibernate.validator.constraints.Range;
@@ -14,7 +13,6 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 
@@ -46,7 +44,7 @@ public class Pelicula {
 
 
 
-   // @ManyToMany( mappedBy = "peliculas" , fetch = FetchType.EAGER , cascade = CascadeType.MERGE)
+
     @JsonIgnoreProperties("peliculas")
     @JoinTable( name = "personajes_peliculas" ,
                 joinColumns = @JoinColumn( name = "pelicula_id") ,
