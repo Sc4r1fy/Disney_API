@@ -26,11 +26,11 @@ public interface PersonajeRepositorio extends JpaRepository<Personaje , Integer>
 
 
      @Query( value = "SELECT * FROM personajes P" +
-             "LEFT JOIN personajes_peliculas T" +
+             " LEFT JOIN personajes_peliculas T" +
              " ON P.personaje_id = T.personaje_id" +
-             " WHERE T.pelicula_id = %:peliculaId%"
+             " WHERE T.pelicula_id LIKE %:peliculaid% "
              , nativeQuery = true)
-     List<Personaje> personajesPorPelicula(@Param("peliculaId") int id);
+     List<Personaje> personajesPorPelicula(@Param("peliculaid") Integer id);
 
 
 }
