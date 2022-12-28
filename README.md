@@ -37,7 +37,7 @@ Se utilizaron las siguientes tecnologías para el proyecto:
 
 Para empezar a usar esta API  debes :
 
-* Tener Java 11
+* Tener Java 17
 * Clonar el proyecto desde github
 * Instalar las dependecias en el pom.xml
 * Descomentar las lineas comentadas en el archivo "DisneyApiV1Application.java" (Estas van a generar los roles y usuarios administradores cuando se corra por primera vez la aplicación)
